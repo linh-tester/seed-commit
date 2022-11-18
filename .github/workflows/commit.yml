@@ -2,8 +2,11 @@ name: ✨
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '* * * * *'
+#   schedule:
+#     - cron: '* * * * *'
+  push:
+    branches: 
+      - main
 
 jobs:
   test:
