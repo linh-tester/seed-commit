@@ -1,14 +1,24 @@
 name: ✨
 
 on:
-  push:
-    branches:
-      - '**'
-      - '!main'
+  workflow_dispatch:
 
 jobs:
   test:
     name: Run test
     runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
       
+      - run: |
+          echo "Hello" > README.md
+          git add .
+          git commit -m "feat: update code"
+          git push origin HEAD
+      
+      
+          
 
