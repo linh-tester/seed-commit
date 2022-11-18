@@ -19,12 +19,21 @@ jobs:
           token: ${{ secrets.PAT }}
       
       - run: |
-          echo "Updated At: $(date "+%d-%m-%y %T")" > README.md
           git config --global user.name DC
           git config --global user.email "clonebmn2itt+1@gmail.com"
+          echo "Updated At: $(date "+%d-%m-%y %T")" > README.md
           git add .
           git commit -m "feat: update code"
-          git push origin HEAD
+          echo "Updated At: $(date "+%d-%m-%y %T")" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T")" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T")" > README.md
+          git add .
+          git commit -m "feat: update code"
+          git push origin HEAD -f
       
       
           
