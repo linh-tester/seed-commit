@@ -30,6 +30,24 @@ jobs:
           echo "Updated At: $(date "+%d-%m-%y %T") 3" > README.md
           git add .
           git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T") 1" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T") 2" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T") 3" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T") 1" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T") 2" > README.md
+          git add .
+          git commit -m "feat: update code"
+          echo "Updated At: $(date "+%d-%m-%y %T") 3" > README.md
+          git add .
+          git commit -m "feat: update code"
           echo "Updated At: $(date "+%d-%m-%y %T")" > README.md
           git add .
           git commit -m "feat: update code"
